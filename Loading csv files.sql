@@ -16,7 +16,7 @@ GO
 
 SELECT * FROM dbo.fact_sales
 
---import the file dim_date
+--Import the file dim_date
 BULK INSERT dbo.dim_date
 FROM 'C:\Users\Admin\Desktop\LabOne\dim_date.csv'
 WITH
