@@ -46,34 +46,22 @@ This project builds a mini data warehouse for a fictional retail company to anal
 | dim_store   |-----| fact_sales  |-----| dim_product |
 +-------------+     +-------------+     +-------------+
 ```
-project-root
-│
-
+## *project-Folder*
+<pre> 
 ├── schema.sql
-
 ├── queries.sql
-
 ├── Loading csv files.sql
-│
-
 ├── data/
-
-│  ├── dim_date.csv
-
+│   ├── dim_date.csv
 │   ├── dim_product.csv
-
 │   ├── dim_store.csv
-
 │   └── fact_sales.csv
-│
 ├── Insight.md
-
 ├── Reflection & Discussion.md
-
 ├── README.md
-
 └── LICENSE
 
+  </pre>
 
 
 ## *Collaborators*
