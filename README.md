@@ -51,7 +51,7 @@ This project builds a mini data warehouse for a fictional retail company to anal
 ├── schema.sql
 ├── queries.sql
 ├── Loading csv files.sql
-├── data/
+├── Data_set/
 │   ├── dim_date.csv
 │   ├── dim_product.csv
 │   ├── dim_store.csv
