@@ -1,66 +1,54 @@
-# # Building a Mini Data Warehouse for a Retail Chain
+# *Building a Mini Data Warehouse for a Retail Chain*
 
-## Course: DSA2040A - Lab One  
-# **Group 8**
-
-## Project Objective
+## *Project Objective*
 
 Students are required to design and build a star schema-based data warehouse, load data from CSV files, and run analytical queries to gain business insights for a retail company.
 
-## Tools & Technologies
+This project builds a mini data warehouse for a fictional retail company to analyze sales performance by product, store, and time. It uses a **star schema** model and is powered by **Microsoft SQL Server**.
+
+## *Tools & Technologies*
 
 - **Database**: Microsoft SQL Server  
 - **Editor**: Visual Studio Code (with SQL extension)  
 - **SQL Client**: SQL Server Management Studio (SSMS)  
 - **Version Control**: Git and GitHub  
-- **Data Format**: CSV files
+- **Data Format**: CSV files  
 
-## Folder Structure
-📁 Building-a-Mini-Data-Warehouse-for-a-Retail-Chain/
+## *Contents*
 
-├── dim_date.csv
+* `Schema.sql`: Table creation script (star schema)  
+* `Loading csv files.sql`: SQL commands to bulk insert CSVs into tables  
+* `queries.sql`: Sample analytical queries  
+* `dim_date.csv`, `dim_product.csv`, `dim_store.csv`, `fact_sales.csv`: Dimension and fact data
+* `README.md`: Project documentation  
+* `LICENSE`: Open source license  
 
-├── dim_product.csv
+## *How to Use*
 
-├── dim_store.csv
+1. Set up a **Microsoft SQL Server** database.  
+2. Run `Schema.sql` using SSMS or Visual Studio Code to create all tables.  
+3. Use `Loading csv files.sql` to load data from CSV files with `BULK INSERT`, or use the Import Wizard in SSMS.  
+4. Open and execute queries from `queries.sql` to analyze key business insights like:
 
-├── fact_sales.csv
+   * Total Revenue by Product Category  
+   * Monthly Sales Trends  
+   * Revenue by Region  
+   * Top Products by Quantity Sold  
 
-├── LICENSE
+## *Star Schema Overview*
 
-├── Loading csv files.sql # SQL script to bulk insert CSVs into tables
-
-├── queries.sql # Analytical SQL queries
-
-├── README.md # Project documentation
-
-
-└── Schema.sql # Star schema: table creation script
-
-## Star Schema Design
+```plaintext
         +-------------+
         |  dim_date   |
         +-------------+
               |
-+-------------+ +-------------+ +-------------+
-| dim_store |---| fact_sales |---| dim_product |
-+-------------+ +-------------+ +-------------+
-# Analytical Queries
-Located in queries.sql. Includes:
++-------------+     +-------------+     +-------------+
+| dim_store   |-----| fact_sales  |-----| dim_product |
++-------------+     +-------------+     +-------------+
+```
+## *Collaborators*
 
-Total Revenue by Product Category
-
-Monthly Sales Trends
-
-Revenue by Region
-
-Top Products by Quantity Sold
-
-# Reflection & Discussion
-1. Why use a star schema instead of a normalized schema?
-
-2. What are the benefits of separating facts from dimensions?
-3. What types of business decisions could this warehouse support?
+## *Team Members – Group 8 (DSA2040A – Lab One)*
 
 | Name                    | Student ID |
 | ----------------------- | ---------- |
@@ -70,4 +58,17 @@ Top Products by Quantity Sold
 | Lesala Phillip Monaheng | 669218     |
 | Mohamed Mohamed         | 670006     |
 
- Repository URL: https://github.com/SnitTeshome/DSA-2040A-PROJECT-ONE
+
+
+## *Reflection & Discussion*
+
+1. Why use a star schema instead of a normalized schema?  
+2. What are the benefits of separating facts from dimensions?  
+3. What types of business decisions could this warehouse support?  
+
+## **Repository URL**:
+ [https://github.com/SnitTeshome/DSA-2040A-PROJECT-ONE](https://github.com/SnitTeshome/DSA-2040A-PROJECT-ONE)
+
+## *License*
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
