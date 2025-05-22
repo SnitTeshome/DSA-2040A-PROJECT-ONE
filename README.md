@@ -1,4 +1,16 @@
 # *Building a Mini Data Warehouse for a Retail Chain*
+## *Table of Contents*
+
+- [Project Objective](#project-objective)  
+- [Tools & Technologies](#tools--technologies)  
+- [Contents](#contents)  
+- [How to Use](#how-to-use)  
+- [Star Schema Overview](#star-schema-overview)  
+- [Project Folder Structure](#project-folder-structure)  
+- [Collaborators](#collaborators)  
+- [Reflection & Discussion](#reflection--discussion)  
+- [Repository URL](#repository-url)  
+- [License](#license)
 
 ## *Project Objective*
 
@@ -26,7 +38,7 @@ This project builds a mini data warehouse for a fictional retail company to anal
 ## *How to Use*
 
 1. Set up a **Microsoft SQL Server** database.  
-2. Run `Schema.sql` using SSMS or Visual Studio Code to create all tables.  
+2. Run `Schema.sql` using SSMS  Code to create all tables.  
 3. Use `Loading csv files.sql` to load data from CSV files with `BULK INSERT`, or use the Import Wizard in SSMS.  
 4. Open and execute queries from `queries.sql` to analyze key business insights like:
 
@@ -46,7 +58,7 @@ This project builds a mini data warehouse for a fictional retail company to anal
 | dim_store   |-----| fact_sales  |-----| dim_product |
 +-------------+     +-------------+     +-------------+
 ```
-## *project-Folder*
+## *Repository-Folder*
 <pre> 
 ├── schema.sql
 ├── queries.sql
@@ -56,6 +68,11 @@ This project builds a mini data warehouse for a fictional retail company to anal
 │   ├── dim_product.csv
 │   ├── dim_store.csv
 │   └── fact_sales.csv
+├── Out_put_quieries/
+│   ├── Total Revenue by Product Category.sql
+│   ├── Monthly Sales Trends.sql
+│   ├── Revenue by Region.sql
+│   └── Top Products by Quantity Sold.sql
 ├── Insight.md
 ├── Reflection & Discussion.md
 ├── README.md
