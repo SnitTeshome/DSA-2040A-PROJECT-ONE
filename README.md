@@ -46,6 +46,36 @@ This project builds a mini data warehouse for a fictional retail company to anal
 | dim_store   |-----| fact_sales  |-----| dim_product |
 +-------------+     +-------------+     +-------------+
 ```
+project-root
+│
+
+├── schema.sql
+
+├── queries.sql
+
+├── Loading csv files.sql
+│
+
+├── data/
+
+│  ├── dim_date.csv
+
+│   ├── dim_product.csv
+
+│   ├── dim_store.csv
+
+│   └── fact_sales.csv
+│
+├── Insight.md
+
+├── Reflection & Discussion.md
+
+├── README.md
+
+└── LICENSE
+
+
+
 ## *Collaborators*
 
 ## *Team Members – Group 8 (DSA2040A – Lab One)*
