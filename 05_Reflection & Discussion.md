@@ -24,19 +24,19 @@
 
 This data warehouse can support a wide range of business decisions including:
 
-### Sales Performance
+#### Sales Performance
 - Analyze sales by product, region, and time periods to identify trends and high-performing segments.
 
-### Inventory Management
+#### Inventory Management
 - Manage inventory levels and perform demand forecasting to ensure optimal stock availability.
 
-### Marketing Strategy
+#### Marketing Strategy
 - Optimize marketing efforts based on customer purchase patterns and product popularity.
 
-### Financial Reporting
+#### Financial Reporting
 - Track revenue accurately and support comprehensive financial reporting.
 
-### Operational Decisions
+#### Operational Decisions
 - Improve store-level operations and supply chain management by monitoring performance metrics and logistics.
 
 ---
