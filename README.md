@@ -1,16 +1,19 @@
 # *Building a Mini Data Warehouse for a Retail Chain*
 ## *Table of Contents*
-
+- [Overview](#overview)  
 - [Project Objective](#project-objective)  
 - [Tools & Technologies](#tools--technologies)  
-- [Contents](#contents)  
 - [How to Use](#how-to-use)  
 - [Star Schema Overview](#star-schema-overview)  
-- [Project Folder Structure](#project-folder-structure)  
-- [Collaborators](#collaborators)  
+- [Repository-Folder Structure](#repository-folder-structure)  
+- [Collaborators](#collaborators)
 - [Reflection & Discussion](#reflection--discussion)  
 - [Repository URL](#repository-url)  
 - [License](#license)
+
+## *Overview*
+
+This project builds a **mini data warehouse** for a fictional retail company to analyze **sales performance by product, store, and time**. Using a **star schema** design and data from CSV files, the warehouse enables the team to run analytical queries for deriving meaningful business insights.
 
 ## *Project Objective*
 
@@ -25,16 +28,6 @@ This project builds a mini data warehouse for a fictional retail company to anal
 - **SQL Client**: SQL Server Management Studio (SSMS)  
 - **Version Control**: Git and GitHub  
 - **Data Format**: CSV files  
-
-## *Contents*
-
-* `Schema.sql`: Table creation script (star schema)  
-* `Loading csv files.sql`: SQL commands to bulk insert CSVs into tables  
-* `queries.sql`: Sample analytical queries  
-* `dim_date.csv`, `dim_product.csv`, `dim_store.csv`, `fact_sales.csv`: Dimension and fact data
-* `README.md`: Project documentation  
-* `LICENSE`: Open source license  
-
 ## *How to Use*
 
 1. Set up a **Microsoft SQL Server** database.  
@@ -50,34 +43,35 @@ This project builds a mini data warehouse for a fictional retail company to anal
 ## *Star Schema Overview*
 
 ```plaintext
-        +-------------+
-        |  dim_date   |
-        +-------------+
-              |
+                      +-------------+
+                      |  dim_date   |
+                      +-------------+
+                           |
 +-------------+     +-------------+     +-------------+
 | dim_store   |-----| fact_sales  |-----| dim_product |
 +-------------+     +-------------+     +-------------+
 ```
-## *Repository-Folder*
+## *Repository-Folder Structure*
 <pre> 
-├── schema.sql
-├── queries.sql
-├── Loading csv files.sql
-├── Data_set/
+├── SQL_scripts/
+│   ├── schema.sql             # Table creation script (star schema)
+│   ├── Loading csv files.sql   # SQL commands to bulk insert CSVs into tables  
+│   ├── queries.sql             #SQL queries for analysis
+│   
+├── Data_set/   #Folder containing provided CSV files:Dimension and fact data
 │   ├── dim_date.csv
 │   ├── dim_product.csv
 │   ├── dim_store.csv
 │   └── fact_sales.csv
-├── Out_put_quieries/
+├── Out_put_quieries/          # result of the query as  csv files
 │   ├── Total Revenue by Product Category.sql
 │   ├── Monthly Sales Trends.sql
 │   ├── Revenue by Region.sql
 │   └── Top Products by Quantity Sold.sql
-├── Insight.md
-├── Reflection & Discussion.md
-├── README.md
-└── LICENSE
-
+├── Insight.md                 # As.md file for insights from the quiries output
+├── Reflection & Discussion.md  # As.md file for reflection and discusiion
+├── README.md                   #Project documentation
+└── LICENSE                     #Open source license 
   </pre>
 
 
@@ -105,5 +99,4 @@ This project builds a mini data warehouse for a fictional retail company to anal
  [https://github.com/SnitTeshome/DSA-2040A-PROJECT-ONE](https://github.com/SnitTeshome/DSA-2040A-PROJECT-ONE)
 
 ## *License*
-
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
