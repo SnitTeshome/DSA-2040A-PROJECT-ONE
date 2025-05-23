@@ -79,13 +79,14 @@ This project builds a mini data warehouse for a fictional retail company to anal
 
 ## *Team Members – Group 8 (DSA2040A – Lab One)*
 
-| Name                    | Student ID |
-| ----------------------- | ---------- |
-| Snit Teshome            | 670552     |
-| Halima Mohammed         | 670315     |
-| Julie Koki              | 669996     |
-| Lesala Phillip Monaheng | 669218     |
-| Mohamed Mohamed         | 670006     |
+| Name                    | Student ID | GitHub Username |
+|-------------------------|------------|-----------------|
+| Snit Teshome            | 670552     | [@SnitTeshome](https://github.com/SnitTeshome)  
+| Halima Mohammed         | 670315     | [@halima-04](https://github.com/halima-04)  
+| Julie Koki              | 669996     | [@juli3333](https://github.com/juli3333)  
+| Lesala Phillip Monaheng | 669218     | [@Lesala](https://github.com/Lesala)  
+| Mohamed Mohamed         | 670006     | [@mohayo8](https://github.com/mohayo8)
+
 
 
 
